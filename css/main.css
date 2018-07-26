@@ -1,7 +1,7 @@
 
 
 body {
-	background-color: tomato;
+	/*background-color: tomato;*/
 	text-align: center;
 	padding-top: 80px;
 }
@@ -46,7 +46,7 @@ input {
 	font-size: 40px;
 	padding-left: 2%;
 	font-family: 'Roboto', sans-serif;
-	transition: .15s ease-out;
+	transition: all .15s ease-out;
 }
 
 input:hover {
@@ -54,6 +54,10 @@ input:hover {
 	font-size: 35px;
 	padding-left: .5%;
 	width: 89%;
+}
+
+input:focus {
+	outline: none;
 }
 
 
@@ -96,14 +100,30 @@ img {
 	width: 800px;
 	filter: blur(35px);
 	transition: 2.3s ease-out;
+	margin-top: 12%;
 }
 
 img:hover {
 	filter: blur(0px);
+	cursor: crosshair;
 }
 p {
 	line-height: 1.5;
 	word-spacing: 1.5px;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 15%;
+	/*background-image: linear-gradient(to right, #ff0074 , rgb(253, 153, 39));*/
+	background: -webkit-linear-gradient(left,rgb(255,0,181),rgb(255,0,116) 57%,rgb(255,127,0) 100%);
+	-webkit-background-clip: text;
+	font-family: 'Roboto', sans-serif;
+	color: transparent;
+}
+
+p span {
+	background-color: #c0c0c0;
+	padding: 5px 3px;
+	color: white;
 }
 
 
@@ -118,10 +138,44 @@ p {
 	background-color: white;
 	opacity: .8;
 	filter: blur(5px;);
+
 }
 
 
+.ethos {
+	margin-top: 15%;
+	width: 800px;
+	height: 425px;
+	background: linear-gradient(to right, rgb(252, 30, 102) , rgb(253, 153, 39));
+}
 
+.ethos-green {
+	margin-top: 15%;
+	width: 800px;
+	height: 425px;
+	background: linear-gradient(to right, rgb(43, 254, 188) , rgb(33, 206, 171));
+}
+
+.ethos-blue {
+	margin-top: 15%;
+	width: 800px;
+	height: 425px;
+	background: linear-gradient(to right, #00ffd5, #00aaff);
+}
+
+.ethos-yellow {
+	margin-top: 15%;
+	width: 800px;
+	height: 425px;
+	background: linear-gradient(to left, #aaff00, #00ff55);  
+}
+
+.ethos-red {
+	margin-top: 15%;
+	width: 800px;
+	height: 425px;
+	background: linear-gradient(to right,  #cb03a8, #fc1f67);
+}
 
 
 
