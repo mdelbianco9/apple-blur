@@ -114,7 +114,7 @@ p {
 	text-align: left;
 	margin-bottom: 15%;
 	/*background-image: linear-gradient(to right, #ff0074 , rgb(253, 153, 39));*/
-	background: -webkit-linear-gradient(left,rgb(255,0,181),rgb(255,0,116) 57%,rgb(255,127,0) 100%);
+	background: -webkit-linear-gradient(left,rgb(20,20,20),rgb(61, 61, 61) 57%,rgb(112,112,112) 100%);
 	-webkit-background-clip: text;
 	font-family: 'Roboto', sans-serif;
 	color: transparent;
@@ -147,6 +147,58 @@ p span {
 	width: 800px;
 	height: 425px;
 	background: linear-gradient(to right, rgb(252, 30, 102) , rgb(253, 153, 39));
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #c2c2c2;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 2px;
+  /*border: 4px solid transparent;*/
+  transition: all .1s ease-in;
+
+}
+
+.dot:hover {
+	/*background: linear-gradient(to left, rgb(252, 30, 102) , rgb(253, 153, 39)); */
+	transform: scale(1.15);
+	/*border: 4px solid #c2c2c2;*/
+	background-color: #a9a9a9;
+
+}
+
+.fa-circle-notch {
+	position: relative;
+	width: 25%;
+	top: 20%;
+	left: 60%;
+	display: block;
+	font-size: 150px;
+	color: #e0ee48;
+	transition: .5s ease-out;
+}
+
+.fa-circle-notch:hover {
+	color: #fff;
+	transform: rotate(-40deg);
+
+}
+
+.fa-asterisk {
+	position: relative;
+	width: 25%;
+	left: 60%;
+	display: block;
+	font-size: 150px;
+	color: #e0ee48;
+	transition: 5s ease-out;
+}
+
+.fa-asterisk:hover {
+	color: #fff;
+	transform: rotate(740deg);
 }
 
 .ethos-green {
