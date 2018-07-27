@@ -51,9 +51,11 @@ input {
 
 input:hover {
 	transform:scale(1.01);
+	transform: scaleY(1.2);
 	font-size: 35px;
 	padding-left: .5%;
 	width: 89%;
+	
 }
 
 input:focus {
@@ -97,10 +99,11 @@ input:focus {
 }
 
 img {
-	width: 800px;
+	width: 400px;
 	filter: blur(35px);
-	transition: 2.3s ease-out;
+	transition: 1s ease-out;
 	margin-top: 12%;
+	height: 550px
 }
 
 img:hover {
@@ -147,7 +150,41 @@ p span {
 	width: 800px;
 	height: 425px;
 	background: linear-gradient(to right, rgb(252, 30, 102) , rgb(253, 153, 39));
+	position: relative;
 }
+
+.ethos:before, .ethos:after {
+	z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #bcbcbc;
+  -webkit-box-shadow: 0 20px 20px #bcbcbc;
+  -moz-box-shadow: 0 20px 20px #bcbcbc;
+  box-shadow: 0 20px 20px #bcbcbc;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.ethos:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
 
 .dot {
   height: 25px;
@@ -158,7 +195,7 @@ p span {
   margin: 0px 2px;
   /*border: 4px solid transparent;*/
   transition: all .1s ease-in;
-
+  cursor: default;
 }
 
 .dot:hover {
@@ -178,6 +215,7 @@ p span {
 	font-size: 150px;
 	color: #e0ee48;
 	transition: .5s ease-out;
+	cursor: progress;
 }
 
 .fa-circle-notch:hover {
@@ -206,6 +244,74 @@ p span {
 	width: 800px;
 	height: 425px;
 	background: linear-gradient(to right, rgb(43, 254, 188) , rgb(33, 206, 171));
+	position: relative;
+}
+
+.ethos-green:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+
+.box {
+  background: #2ba2fe;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 20px;
+  height: 80px;
+  width: 110px;
+  margin-top: 10%;
+}
+
+.ethos-green:hover .box {
+	transform: scale(1.2);
+	cursor: all-scroll;
+}
+
+
+.box-1 {
+  transition: all 1.3s;
+  background-color: #2ba2fe;
+
+}
+
+.box-2 {
+  transition: all 1s 0.5s;
+  background-color: #44adfe;
+}
+
+.box-3 {
+  transition: all 1.3s 1s;
+  background-color: #5eb8fe;
+ }
+
+ .ethos-green:hover .box-1 {
+ 	background-color: #01db97;
+ 	
+ }
+
+ .ethos-green:hover .box-2 {
+	background-color: #01f5a9;
+}
+
+.ethos-green:hover .box-3 {
+	background-color: #12feb4;
 }
 
 .ethos-blue {
