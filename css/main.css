@@ -47,13 +47,14 @@ input {
 	padding-left: 2%;
 	font-family: 'Roboto', sans-serif;
 	transition: all .15s ease-out;
+	transition: all .5s ease;
 }
 
 input:hover {
 	transform:scale(1.01);
 	transform: scaleY(1.2);
 	font-size: 35px;
-	padding-left: .5%;
+	padding-left: 3%;
 	width: 89%;
 	
 }
@@ -271,34 +272,38 @@ p span {
 
 .box {
   background: #2ba2fe;
-  border-radius: 5px;
+  border-radius: 50%;
   display: inline-block;
   margin: 20px;
-  height: 80px;
-  width: 110px;
+  height: 50px;
+  width: 90px;
+/*  height: 20px;
+  width: 60px;*/
   margin-top: 10%;
 }
 
 .ethos-green:hover .box {
-	transform: scale(1.2);
+	transform: scale(2);
 	cursor: all-scroll;
 }
 
 
 .box-1 {
-  transition: all 1.3s;
+  transition: all .3s;
   background-color: #2ba2fe;
 
 }
 
 .box-2 {
-  transition: all 1s 0.5s;
+  transition: all 1s;
   background-color: #44adfe;
+  
 }
 
 .box-3 {
-  transition: all 1.3s 1s;
+  transition: all 3s;
   background-color: #5eb8fe;
+  
  }
 
  .ethos-green:hover .box-1 {
@@ -316,10 +321,68 @@ p span {
 
 .ethos-blue {
 	margin-top: 15%;
+	padding-top: 1.15%;
 	width: 800px;
 	height: 425px;
 	background: linear-gradient(to right, #00ffd5, #00aaff);
+	   -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+             cursor: crosshair;
 }
+
+.circle, .circle0, .circle1, .circle2, .circle3, .circle4, .circle5 {
+  border-radius: 50%;
+
+  height: 50px;
+  width: 90px;
+  margin: 10px;
+  display: inline-block;
+}
+.ethos-blue:hover .circle, .ethos-blue:hover .circle0, .ethos-blue:hover .circle1, .ethos-blue:hover .circle2, .ethos-blue:hover .circle3, .ethos-blue:hover .circle4, .ethos-blue:hover .circle5 {
+  transform: translateY(300px) ;
+  opacity: .6;
+  cursor: crosshair;
+  /*transform: rotate(450deg);*/
+}
+
+
+.circle0 {
+  background: #afe3e2;
+  /*transition: all 1.5s ease-in-out;*/
+  transition: all 1.5s cubic-bezier(0.1, 1.5, 0.2, 1);
+
+}
+.circle1 {
+  background: #b2d6e4;
+  transition: all 1.5s ease;
+  transition: all 1.5s cubic-bezier(0.2, 1.5, 0.3, 1);
+  transform: rotate(450deg);
+}
+.circle2 {
+  background: #b6c9e6;
+  transition: all 1.5s ease-in;
+  transition: all 1.5s cubic-bezier(0.3, 1.5, 0.3, 1);
+  transform: rotate(450deg);
+}
+.circle3 {
+  background: #b9bee8;
+  transition: all 1.5s ease-out;
+  transition: all 1.5s cubic-bezier(0.6, 1.5, 0.3, 1);
+  transform: rotate(450deg);
+}
+.circle4 {
+  background: #c5bcea;
+  transition: all 1.5s ease-in-out;
+  transition: all 1.5s cubic-bezier(0.7, 1.5, 0.3, 1);
+  transform: rotate(450deg);
+}
+.circle5 {
+  background: #d1bcea;
+  transition: all 1.5s cubic-bezier(0.8, 1.5, 0.1, 1);
+  transform: rotate(450deg);
+}
+
 
 .ethos-yellow {
 	margin-top: 15%;
