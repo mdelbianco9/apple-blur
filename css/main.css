@@ -615,4 +615,55 @@ p span {
 }
 
 
+.ethos-dark-blue {
+  margin-top: 15%;
+  width: 800px;
+  height: 425px;
+  background-color: rgb(4, 55, 98);
+  position: relative;
+  display: flex;
+  text-align: left;
+}
+
+.ethos-dark-blue div {
+  position: relative;
+  width: 50%;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.shuttles {
+  text-align: center;
+}
+
+.fa-user-astronaut {
+  position: relative;
+  left: 15%;
+  top: 30%;
+  font-size: 190px;
+  color: rgb(33, 206, 171);
+  
+}
+
+.fa-space-shuttle {
+  position: relative;
+  top: 80%;
+  transform: rotate(-90deg);
+  font-size: 40px;
+  color: rgb(43, 254, 187);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
