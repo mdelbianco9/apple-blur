@@ -642,8 +642,24 @@ p span {
   top: 30%;
   font-size: 190px;
   color: rgb(33, 206, 171);
-  
+  transition: background-color 6s ease-in-out;
 }
+
+.ethos-dark-blue:hover .fa-user-astronaut {
+  animation-name: astronaut;
+  animation-duration: 15s;
+  background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes astronaut {
+  0%   {background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); }
+  20%   {background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%);}
+  60%   {color: yellow}
+  100% {color:rgb(43, 254, 187);}
+}
+
 
 .fa-space-shuttle {
   position: relative;
@@ -651,19 +667,75 @@ p span {
   transform: rotate(-90deg);
   font-size: 40px;
   color: rgb(43, 254, 187);
+  
 }
 
+/* 1st Spaceship */
 
+.ethos-dark-blue:hover .shuttles i:nth-child(1) {
+  -webkit-animation-name: spaceshipOne; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: spaceshipOne;
+    animation-duration: 2s;
+}
 
+@keyframes spaceshipOne {
+    0%   {color: #F0F400; top:80%;}
+    /*25% {color:yellow; top: 70%}*/
+   /* 50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}*/
+    100% {color:rgb(43, 254, 187); top: -90%;}
+}
 
+/* 2nd Spaceship */
 
+.ethos-dark-blue:hover .shuttles i:nth-child(2) {
+  -webkit-animation-name: spaceshipTwo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.8s; /* Safari 4.0 - 8.0 */
+    animation-name: spaceshipTwo;
+    animation-duration: 1.8s;
+    transition: all ease-out;
+}
 
+@keyframes spaceshipTwo {
+    0%   {color: #F0F400; top:80%;}
+    /*25% {color:yellow; top: 70%}*/
+   /* 50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}*/
+    100% {color:rgb(43, 254, 187); top: -90%;}
+}
 
+/* 3rd Spaceship */
 
+.ethos-dark-blue:hover .shuttles i:nth-child(3) {
+  -webkit-animation-name: spaceshipThree; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2.3s; /* Safari 4.0 - 8.0 */
+    animation-name: spaceshipThree;
+    animation-duration: 2.3s;
+}
 
+@keyframes spaceshipThree {
+    0%   {color: #F0F400; top:80%; }
+    /*25% {color:yellow; top: 70%}*/
+    /*50%  {color:blue; top: 70%;}
+    75%  {color:green; top:50% ;}*/
+    100% {color:rgb(43, 254, 187); top: -90%; }
+}
 
+/* 4th Spaceship */
 
+.ethos-dark-blue:hover .shuttles i:nth-child(4) {
+  -webkit-animation-name: spaceshipFour; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2.6s; /* Safari 4.0 - 8.0 */
+    animation-name: spaceshipFour;
+    animation-duration: 2.6s;
+   
+}
 
+@keyframes spaceshipFour {
+    0%   { top: 80%;}
+    100% {top: -90%; color: red;}
+}
 
 
 
