@@ -19,7 +19,7 @@ h2 {
 	border: 1px solid black;
 	display: inline;
 	padding: 10px;
-	padding-right: 50px;
+	padding-top: 50px;
 	border-width: 5px;
 	cursor: crosshair;
 
@@ -117,7 +117,7 @@ p {
 	font-size: 20px;
 	text-align: left;
 	margin-bottom: 15%;
-	/*background-image: linear-gradient(to right, #ff0074 , rgb(253, 153, 39));*/
+	/*background-image: linear-gradient(to top, #ff0074 , rgb(253, 153, 39));*/
 	background: -webkit-linear-gradient(left,rgb(20,20,20),rgb(61, 61, 61) 57%,rgb(112,112,112) 100%);
 	-webkit-background-clip: text;
 	font-family: 'Roboto', sans-serif;
@@ -150,7 +150,7 @@ p span {
 	margin-top: 15%;
 	width: 800px;
 	height: 425px;
-	background: linear-gradient(to right, rgb(252, 30, 102) , rgb(253, 153, 39));
+	background: linear-gradient(to top, rgb(252, 30, 102) , rgb(253, 153, 39));
 	position: relative;
 }
 
@@ -181,7 +181,7 @@ p span {
   -o-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
   transform: rotate(3deg);
-  right: 10px;
+  top: 10px;
   left: auto;
 }
 
@@ -244,7 +244,7 @@ p span {
 	margin-top: 15%;
 	width: 800px;
 	height: 425px;
-	background: linear-gradient(to right, rgb(43, 254, 188) , rgb(33, 206, 171));
+	background: linear-gradient(to top, rgb(43, 254, 188) , rgb(33, 206, 171));
 	position: relative;
 }
 
@@ -324,7 +324,7 @@ p span {
 	padding-top: 1.15%;
 	width: 800px;
 	height: 425px;
-	background: linear-gradient(to right, #00ffd5, #00aaff);
+	background: linear-gradient(to top, #00ffd5, #00aaff);
 	   -webkit-box-shadow: 0 10px 6px -6px #777;
        -moz-box-shadow: 0 10px 6px -6px #777;
             box-shadow: 0 10px 6px -6px #777;
@@ -439,13 +439,13 @@ p span {
     top:0;
     bottom:0;
     left:10px;
-    right:10px;
+    top:10px;
     -moz-border-radius:100px / 10px;
     border-radius:100px / 10px;
 }
 .ethos-yellow:after
 {
-    right:10px;
+    top:10px;
     left:auto;
     -webkit-transform:skew(8deg) rotate(3deg);
        -moz-transform:skew(8deg) rotate(3deg);
@@ -460,7 +460,7 @@ p span {
 	margin-bottom: 10%;
 	width: 800px;
 	height: 425px;
-	background: linear-gradient(to right,  #cb03a8, #fc1f67);
+	background: linear-gradient(to top,  #cb03a8, #fc1f67);
 	position: relative;
   display: flex;
   align-items: center;
@@ -628,12 +628,16 @@ p span {
 .ethos-dark-blue div {
   position: relative;
   width: 50%;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   background-color: transparent;
 }
 
 .shuttles {
   text-align: center;
+}
+
+.astro {
+
 }
 
 .fa-user-astronaut {
@@ -647,17 +651,86 @@ p span {
 
 .ethos-dark-blue:hover .fa-user-astronaut {
   animation-name: astronaut;
-  animation-duration: 15s;
+  animation-duration: 30s;
   background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%);
   color: transparent;
   -webkit-background-clip: text;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes astronaut {
-  0%   {background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); }
-  20%   {background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%);}
-  60%   {color: yellow}
-  100% {color:rgb(43, 254, 187);}
+  0%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%);
+     }
+
+  10%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: 10%; 
+    left: 10%; 
+    transform: rotate(10deg);
+  }
+
+  20%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%); 
+    top: -23%; 
+    left: 12%; 
+    transform: rotate(-12deg);
+  }
+
+  30%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: -38%; 
+    left: 20%; 
+    transform: rotate(26deg);
+  }
+
+  40%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: -46%; 
+    left: 30%; 
+    transform: rotate(-20deg);
+  }
+  50%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, blue, rgba(51, 203, 200, 0.68) 100%); 
+    top: -60%; 
+    left: 45%;
+    transform: rotate(360deg);
+  }
+
+  60%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: -30%; 
+    left: 58%; 
+    transform: rotate(-20deg);
+  }
+
+  70%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: -10%; 
+    left: 47%; 
+    transform: rotate(-10deg);
+  }
+
+  80%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: 0%; 
+    left: 35%; 
+    transform: rotate(20deg);
+  }
+
+  90%   {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, #fff, rgba(51, 203, 200, 0.68) 100%); 
+    top: 20%; 
+    left: 22%; 
+    /*transform: rotate(20deg);*/
+  }
+
+  100% {
+    background-image: linear-gradient(to right, rgba(79, 109, 200, 0.89) 0%, rgba(51, 203, 200, 0.68) 100%);
+     top: 30%; 
+     left: 15%;
+   }
 }
 
 
@@ -667,7 +740,6 @@ p span {
   transform: rotate(-90deg);
   font-size: 40px;
   color: rgb(43, 254, 187);
-  
 }
 
 /* 1st Spaceship */
@@ -738,4 +810,17 @@ p span {
 }
 
 
+/* 5th Spaceship */
 
+.ethos-dark-blue:hover .shuttles i:nth-child(5) {
+  -webkit-animation-name: spaceshipFive; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2.6s; /* Safari 4.0 - 8.0 */
+    animation-name: spaceshipFive;
+    animation-duration: 2.6s;
+   
+}
+
+@keyframes spaceshipFive {
+    0%   { top: 80%; }
+    100% {top: -90%; color: red;}
+}
